@@ -1,0 +1,11 @@
+# GM SDK Assets (too large for GitHub)
+gm_assets/
+*.dmg
+*.tgz
+
+# Dependencies
+node_modules/
+dist/
+
+# OS Files
+.DS_Store
