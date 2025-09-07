@@ -14,7 +14,7 @@ https://developer.gm.com/docs/js-documentation/js_docs/js_platform%2Fsdk_guides%
 - macOS (for the NGI Emulator)
 - Homebrew package manager
 - Node.js version 8 (required for GM NGI SDK compatibility)
-- Package manager: npm, yarn, or bun
+- Package manager: npm or yarn
 
 > **Important**: The GM NGI SDK requires Node.js version 8. We'll use Homebrew to install nvm, then use nvm to manage Node versions.
 
@@ -114,9 +114,6 @@ The SDK provides the necessary tools and libraries for GM app development.
    ```bash
    # Using npm
    npm install
-   
-   # Using bun (faster alternative)
-   bun install
    ```
 
 2. Your app configuration is defined in `gmapp.json`:
@@ -138,9 +135,6 @@ The SDK provides the necessary tools and libraries for GM app development.
    ```bash
    # Using npm
    npm start
-   
-   # Using bun (faster alternative)
-   bun start
    ```
 
 2. **Launch NGI Emulator:**
@@ -151,9 +145,6 @@ The SDK provides the necessary tools and libraries for GM app development.
    ```bash
    # Using npm
    npm run build
-   
-   # Using bun (faster alternative)
-   bun run build
    ```
 
 ### 7. Testing
@@ -206,16 +197,6 @@ If you previously installed the GM SDK globally and want to use local installati
    ```
 
 3. **Follow the local installation steps** in section 4 above
-
-### Bun Installation Issues
-
-If you encounter errors when installing the GM SDK with Bun:
-
-1. **ENOENT extracting tarball error**: Use absolute path instead of relative path
-2. **Git clone errors for GM repositories**: The GM SDK depends on private repositories. Either:
-   - Use npm instead: `npm install ./gm_assets/js-emu_ngi-sdk-1.10.0.tgz`
-   - Ensure you have SSH access to GM's Bitbucket repositories
-   - Contact your GM developer contact for repository access
 
 ### Node.js Version Issues
 
